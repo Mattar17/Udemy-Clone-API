@@ -16,12 +16,17 @@ namespace Udemy.Repository.Context
 
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+        }
+
         public DbSet<Course> Coureses { get; set; }
         public DbSet<Course_Chapter> CourseChapters { get; set; }
         public DbSet<Chapter_Lecture> ChapterLectures { get; set; }
         public DbSet<CourseCategory> CourseCategories { get; set; }
         public DbSet<CourseReview> CourseReviews { get; set; }
-        public DbSet<Message> Messages { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Student_Course> Student_Courses { get; set; }

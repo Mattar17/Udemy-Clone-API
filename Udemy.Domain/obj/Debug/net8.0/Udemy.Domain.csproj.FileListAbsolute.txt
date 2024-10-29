@@ -1,0 +1,13 @@
+D:\Projects\Udemy\Udemy.Domain\bin\Debug\net8.0\Udemy.Domain.deps.json
+D:\Projects\Udemy\Udemy.Domain\bin\Debug\net8.0\Udemy.Domain.dll
+D:\Projects\Udemy\Udemy.Domain\bin\Debug\net8.0\Udemy.Domain.pdb
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.csproj.AssemblyReference.cache
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.AssemblyInfoInputs.cache
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.AssemblyInfo.cs
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.sourcelink.json
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.dll
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\refint\Udemy.Domain.dll
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\Udemy.Domain.pdb
+D:\Projects\Udemy\Udemy.Domain\obj\Debug\net8.0\ref\Udemy.Domain.dll

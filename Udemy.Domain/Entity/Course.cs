@@ -17,10 +17,7 @@ namespace Udemy.Domain.Entity
         public decimal Price { get; set; }
         public bool IsApproved { get; set; }
         public DateTime CreationDate { get; set; }
-        public string[] CourseLanguages { get; set; }
         public CourseLevel Level { get; set; }
-
-        [ForeignKey(nameof(Category))]
         public int CategoryId { get; set; }
         public CourseCategory Category { get; set; }
         public ICollection<CourseReview> CourseReviews { get; set; }
