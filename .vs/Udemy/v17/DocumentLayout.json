@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Projects\\Udemy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3418EF81-E1D8-428D-BCF3-18A29DE56AE5}|Udemy.Repository\\Udemy.Repository.csproj|d:\\projects\\udemy\\udemy.repository\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3418EF81-E1D8-428D-BCF3-18A29DE56AE5}|Udemy.Repository\\Udemy.Repository.csproj|solutionrelative:udemy.repository\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29F5F2AB-7329-439D-BB5C-FA9943008BEA}|Udemy.Core\\Udemy.Presentation.csproj|d:\\projects\\udemy\\udemy.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29F5F2AB-7329-439D-BB5C-FA9943008BEA}|Udemy.Core\\Udemy.Presentation.csproj|solutionrelative:udemy.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3418EF81-E1D8-428D-BCF3-18A29DE56AE5}|Udemy.Repository\\Udemy.Repository.csproj|d:\\projects\\udemy\\udemy.repository\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3418EF81-E1D8-428D-BCF3-18A29DE56AE5}|Udemy.Repository\\Udemy.Repository.csproj|solutionrelative:udemy.repository\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Projects\\Udemy\\Udemy.Repository\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Udemy.Repository\\Context\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Projects\\Udemy\\Udemy.Repository\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "Udemy.Repository\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T05:46:05.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\Udemy\\Udemy.Core\\Program.cs",
               "RelativeDocumentMoniker": "Udemy.Core\\Program.cs",
               "ToolTip": "D:\\Projects\\Udemy\\Udemy.Core\\Program.cs",
               "RelativeToolTip": "Udemy.Core\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T05:45:19.252Z",
               "EditorCaption": ""
