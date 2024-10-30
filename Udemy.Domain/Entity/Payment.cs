@@ -15,6 +15,6 @@ namespace Udemy.Domain.Entity
         public string BuyerId { get; set; }
 
         public Course Course { get; set; }
-        public Guid CourseId { get; set; }
+        public string CourseId { get; set; }
     }
 }

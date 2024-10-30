@@ -11,6 +11,6 @@ namespace Udemy.Domain.Entity
         public int Id { get; set; }
         public string Category {get; set; }
 
-        public ICollection<Course> Courses { get; set; }
+        public ICollection<Course>? Courses { get; set; }
     }
 }

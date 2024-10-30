@@ -13,7 +13,7 @@ namespace Udemy.Domain.Entity
         public int Chapter_Number { get; set; }
 
         public Course Course { get; set; }
-        public Guid Course_id { get; set; }
-        public ICollection<Chapter_Lecture> Chapter_Lectures { get; set; }
+        public string Course_id { get; set; }
+        public ICollection<Chapter_Lecture>? Chapter_Lectures { get; set; }
     }
 }

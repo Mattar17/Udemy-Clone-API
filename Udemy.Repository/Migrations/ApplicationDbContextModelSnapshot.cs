@@ -202,7 +202,6 @@ namespace Udemy.Repository.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("PricureUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SecurityStamp")
@@ -244,7 +243,6 @@ namespace Udemy.Repository.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MediaUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -256,9 +254,8 @@ namespace Udemy.Repository.Migrations
 
             modelBuilder.Entity("Udemy.Domain.Entity.Course", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
@@ -316,8 +313,9 @@ namespace Udemy.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<Guid>("CourseId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CourseId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
@@ -357,8 +355,9 @@ namespace Udemy.Repository.Migrations
                     b.Property<int>("Chapter_Number")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("Course_id")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("Course_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
@@ -402,8 +401,9 @@ namespace Udemy.Repository.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid>("CourseId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CourseId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("PaymentMethodId")
                         .IsRequired()
@@ -426,8 +426,8 @@ namespace Udemy.Repository.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid>("CourseId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CourseId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("CompletedPercentage")
                         .HasColumnType("int");

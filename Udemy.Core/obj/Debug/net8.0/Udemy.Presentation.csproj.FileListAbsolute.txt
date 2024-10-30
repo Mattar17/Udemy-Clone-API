@@ -150,3 +150,6 @@ D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Udemy.Domain.dll
 D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Udemy.Repository.dll
 D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Udemy.Repository.pdb
 D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Udemy.Domain.pdb
+D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Udemy.Services.dll
+D:\Projects\Udemy\Udemy.Core\bin\Debug\net8.0\Udemy.Services.pdb

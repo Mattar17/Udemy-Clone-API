@@ -10,3 +10,7 @@ D:\Projects\Udemy\Udemy.Services\obj\Debug\net8.0\Udemy.Services.dll
 D:\Projects\Udemy\Udemy.Services\obj\Debug\net8.0\refint\Udemy.Services.dll
 D:\Projects\Udemy\Udemy.Services\obj\Debug\net8.0\Udemy.Services.pdb
 D:\Projects\Udemy\Udemy.Services\obj\Debug\net8.0\ref\Udemy.Services.dll
+D:\Projects\Udemy\Udemy.Services\bin\Debug\net8.0\Udemy.Domain.dll
+D:\Projects\Udemy\Udemy.Services\bin\Debug\net8.0\Udemy.Domain.pdb
+D:\Projects\Udemy\Udemy.Services\obj\Debug\net8.0\Udemy.Services.csproj.AssemblyReference.cache
+D:\Projects\Udemy\Udemy.Services\obj\Debug\net8.0\Udemy.Se.B1C96DDE.Up2Date

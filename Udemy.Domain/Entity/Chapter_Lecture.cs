@@ -10,7 +10,7 @@ namespace Udemy.Domain.Entity
     {
         public int Id { get; set; }
         public string Lecture_Title { get; set; }
-        public string MediaUrl { get; set; }
+        public string? MediaUrl { get; set; }
 
         public Course_Chapter Course_Chapter { get; set; }
         public int ChapterId { get; set; }

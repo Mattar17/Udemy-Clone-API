@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Udemy.Domain.Entity;
 using Udemy.Repository.Context;
+using  Udemy.Presentation.Extensions;
 
 namespace Udemy.Core
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -26,10 +27,8 @@ namespace Udemy.Core
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
-                
+
+            builder.Services.AddJWTAuthenticationSechma(builder.Configuration);
             #endregion
 
 
@@ -48,6 +47,60 @@ namespace Udemy.Core
 
 
             app.MapControllers();
+
+            #region Roles + Admin Seeding
+            using (var Scope = app.Services.CreateScope())
+            {
+                var RoleManager = Scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+                var Roles = new[] { "Admin" , "Instructor" , "Student" };
+
+                foreach (var Role in Roles)
+                {
+                    if (!await RoleManager.RoleExistsAsync(Role))
+                    {
+                        await RoleManager.CreateAsync(new IdentityRole(Role));
+                    }
+                }
+
+
+            }
+
+            using (var Scope = app.Services.CreateScope())
+            {
+                var userManager = Scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+                var Admin = await userManager.FindByEmailAsync("admin@udemy.com");
+
+                if (Admin == null)
+                {
+                    var admin = new ApplicationUser()
+                    {
+                        Email = "admin@udemy.com" ,
+                        UserName = "Admin" ,
+                        FullName = "Admin"
+                    };
+
+                    var result = await userManager.CreateAsync(admin , "Udemyadmin@123");
+
+                    if (result.Succeeded)
+                    {
+                        await userManager.AddToRoleAsync(admin , "Admin");
+                    }
+                }
+
+                else
+                {
+                    if (!await userManager.IsInRoleAsync(Admin , "Admin"))
+                    {
+                        await userManager.AddToRoleAsync(Admin , "Admin");
+                    }
+                }
+
+
+            }
+            #endregion
+
 
             app.Run();
         }

@@ -10,8 +10,11 @@ namespace Udemy.Domain.Entity
 {
     public class Course
     {
-       
-        public Guid Id { get; set; }
+        public Course()
+        {
+            Id = Guid.NewGuid().ToString();
+        }
+        public string Id { get; set ; }
         public string Title { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
@@ -20,8 +23,8 @@ namespace Udemy.Domain.Entity
         public CourseLevel Level { get; set; }
         public int CategoryId { get; set; }
         public CourseCategory Category { get; set; }
-        public ICollection<CourseReview> CourseReviews { get; set; }
-        public ICollection<Course_Chapter> Course_Chapters { get; set; }
-        public ICollection<Student_Course> Course_Students { get; set; }
+        public ICollection<CourseReview>? CourseReviews { get; set; }
+        public ICollection<Course_Chapter>? Course_Chapters { get; set; }
+        public ICollection<Student_Course>? Course_Students { get; set; }
     }
 }
